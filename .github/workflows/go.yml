@@ -15,8 +15,8 @@ jobs:
       postgres:
         image: postgres:17
         env:
-          POSTGRES_USER: migrate
-          POSTGRES_PASSWORD: migrate
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
           POSTGRES_DB: migrate
         ports:
           - 5432:5432
@@ -27,7 +27,7 @@ jobs:
           --health-retries 5
 
     env:
-      POSTGRES_URL: postgres://migrate:migrate@localhost:5432/migrate
+      POSTGRES_URL: postgres://postgres:postgres@localhost:5432/migrate
 
     steps:
     - uses: actions/checkout@v4

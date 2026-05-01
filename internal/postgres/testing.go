@@ -7,7 +7,7 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
-const defaultURL = "postgres://migrate:migrate@localhost:5432/migrate"
+const defaultURL = "postgres://postgres:postgres@localhost:5432/migrate"
 
 func url() string {
 	u := os.Getenv("POSTGRES_URL")
