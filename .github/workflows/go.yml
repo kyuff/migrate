@@ -30,7 +30,7 @@ jobs:
       POSTGRES_URL: postgres://migrate:migrate@localhost:5432/migrate
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Set up Go
       uses: actions/setup-go@v5
